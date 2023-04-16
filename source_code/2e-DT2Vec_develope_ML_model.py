@@ -660,7 +660,7 @@ def plot_pca(df):
         
     chart = ggplot(df, aes(x='PCA-1', y='PCA-2',  color='factor(label)') )         + geom_point(size=120, alpha=0.8)         
     
-   chart.save(f'{pca_t}_pca_GSD.png', width=12, height=8)  
+    chart.save(f'{pca_t}_pca_GSD.png', width=12, height=8)  
    
     return chart
 
